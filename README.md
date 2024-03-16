@@ -14,34 +14,34 @@ Here I am providing a basic script for image classification of tree species base
 - **accuracy_score and classification_report:** Evaluating the model's performance.
 - **matplotlib.pyplot:** Data visualization.
 
-### Loading ↻ Loading Data:
+### Loading ↻ Data:
 - Define the directory path (`dire`) and categories of images.
 - Here reading images from the specified directory (location), after this resize the images into a standard size (`SIZE`), and store them in the `images` list.
 - After this assigning labels to the loaded images based on their categories and store them in the `labels` list.
 
-### Feature Extraction:
+### 🔍 Feature Extraction:
 - Define a function `feature_extractor` to extract features from images. Here we used GLCM (Gray-Level Co-occurrence Matrix).
 - Iterate over each image in the dataset and calculate GLCM properties such as contrast, dissimilarity, homogeneity, and energy.
 - Store the extracted features in a pandas DataFrame (`image_dataset`).
 
-### Data Splitting:
+### 🛢 Data Splitting:
 - Split the dataset into training and testing sets using `train_test_split`, with 15% of the data allocated for testing.
 - Further split the training set into training and validation sets using `train_test_split`, with 10% of the training data allocated for validation.
 
-### Feature Scaling:
+### ⚖️ Feature Scaling:
 - Scale the features in the training, validation, and test sets using `StandardScaler`.
 
-### Model Training:
+### 🎯 Model Training:
 - Initialize an SVM classifier (`SVC`) with a linear kernel and default hyperparameters.
 - Train the SVM classifier on the scaled training data.
 
-### Model Evaluation:
+### 📋 Model Evaluation:
 - Make predictions on the validation and test data using the trained model.
 - Calculate the accuracy scores for the training, validation, and test sets.
 - Print the training, validation, and test accuracies.
 - Generate a classification report to evaluate precision, recall, and F1-score for each class.
 
-### Visualization:
+### 📊 Visualization:
 - Plot decision boundaries for the validation and test sets to visualize the SVM's classification.
 
 
