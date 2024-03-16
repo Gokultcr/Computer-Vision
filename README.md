@@ -46,5 +46,5 @@ Here I am providing a basic script for image classification of Defected and Norm
 
 
 ## Conclusion:
-This script provides a comprehensive workflow, including data loading, preprocessing, model training, evaluation, and visualization, to classify images of bark into different tree species.
+This script provides a comprehensive workflow, including data loading, preprocessing, model training, evaluation, and visualization, to classify images of woods into defected and normal.
 
