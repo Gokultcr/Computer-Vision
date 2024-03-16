@@ -3,7 +3,7 @@
 
 Here I am providing a basic script for image classification of tree species based on bark images using an SVM classifier. Please note that this script is intended for understanding the process involved in species classification, so accuracy may not be optimal. To achieve better accuracy, additional modifications and optimizations may be necessary.
 
-###  ⬆️Importing Libraries:
+###  ⬆️ Importing Libraries:
 - **numpy:** To perform numerical operations
 - **os:** Interacts with the operating system for handling file paths.
 - **cv2:** To perfrom Image processing tasks.
@@ -14,7 +14,7 @@ Here I am providing a basic script for image classification of tree species base
 - **accuracy_score and classification_report:** Evaluating the model's performance.
 - **matplotlib.pyplot:** Data visualization.
 
-### Loading Data:
+### Loading ↻ Loading Data:
 - Define the directory path (`dire`) and categories of images.
 - Here reading images from the specified directory (location), after this resize the images into a standard size (`SIZE`), and store them in the `images` list.
 - After this assigning labels to the loaded images based on their categories and store them in the `labels` list.
